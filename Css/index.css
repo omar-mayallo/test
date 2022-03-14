@@ -1,0 +1,151 @@
+/*______GLOBAL_STYLES______*/
+:root {
+  --main-color: #59ab6e;
+}
+* {
+  box-sizing: border-box;
+}
+/* html {
+  scroll-behavior: smooth;
+} */
+body {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+/*______GLOBAL_ClASSES______*/
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/*______HEADER_NAVBAR______*/
+header {
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(110, 109, 109, 0.747);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo-box {
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: var(--main-color);
+  height: 68.4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .nav-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+header .nav-item {
+  transition: 0.1s;
+  height: 68.4px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+header .nav-item.active {
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+}
+header .nav-item:hover a {
+  color: var(--main-color);
+}
+header .menu-icon,
+header .nav-item.close-icon {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  header .navbar {
+    display: none;
+  }
+  header .menu-icon {
+    display: flex;
+  }
+}
+.menu-sm {
+  transition: left 1s;
+  background-color: black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  z-index: 10000;
+  min-height: 100vh;
+}
+.show-menu {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  display: block;
+}
+.hide-menu {
+  top: 0;
+  left: 150%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  display: block;
+}
+.menu-sm i {
+  position: absolute;
+  color: white;
+  top: 8%;
+  right: 5%;
+  cursor: pointer;
+}
+.menu-sm i:hover {
+  color: var(--main-color);
+}
+.menu-box {
+  background-color: black;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu-item:hover a {
+  color: var(--main-color);
+}

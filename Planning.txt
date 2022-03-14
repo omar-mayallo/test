@@ -1,0 +1,5 @@
+1- Planning files, Fonts, icons, tabLogo ...etc.
+2-Header&Navbar
+-Responsive 👍🆗
+-Sticky
+
